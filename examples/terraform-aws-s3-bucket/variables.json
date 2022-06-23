@@ -1,0 +1,10 @@
+{
+    "buckets": {
+        "matt-bytejunkie": {
+            "force_destroy": true
+        },
+        "stanley-optimusprime": {
+            "force_destroy": false
+        }
+    }
+}
