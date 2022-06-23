@@ -25,3 +25,8 @@ variable "bytejunkies_bucket" {
 ```
 
 ## Optional Parameters
+
+
+## Examples
+
+There are some code examples in /examples/terraform-aws-s3-bucket
