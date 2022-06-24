@@ -1,10 +1,12 @@
 {
     "buckets": {
         "matt-bytejunkie": {
-            "force_destroy": true
+            "force_destroy": true,
+            "bucket_versioning_status": "Enabled"
         },
         "stanley-optimusprime": {
-            "force_destroy": false
+            "force_destroy": false,
+            "bucket_versioning_status": "Suspended"
         }
     }
 }
