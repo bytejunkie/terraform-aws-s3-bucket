@@ -11,4 +11,6 @@ module "s3-buckets" {
   force_destroy            = local.local_data.buckets[each.value].force_destroy
   bucket_versioning_status = local.local_data.buckets[each.value].bucket_versioning_status
 
+  expiration_rules = local.local_data.buckets[each.value].lifecycle_rules.expiration
+
 }

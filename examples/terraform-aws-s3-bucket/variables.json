@@ -6,7 +6,19 @@
         },
         "stanley-optimusprime": {
             "force_destroy": false,
-            "bucket_versioning_status": "Suspended"
+            "bucket_versioning_status": "Suspended",
+            "lifecycle_rules": {
+                "expiration": {
+                    "one": {
+                        "days": 60,
+                        "expired_object_delete_marker": true
+                    },
+                    "two": {
+                        "days": 30,
+                        "expired_object_delete_marker": false
+                    }
+                }
+            }
         }
     }
 }
