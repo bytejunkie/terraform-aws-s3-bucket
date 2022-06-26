@@ -4,7 +4,7 @@
             "force_destroy": true,
             "bucket_versioning_status": "Enabled"
         },
-        "stanley-optimusprime": {
+        "stanley-optimus": {
             "force_destroy": false,
             "bucket_versioning_status": "Suspended",
             "lifecycle_rules": {
