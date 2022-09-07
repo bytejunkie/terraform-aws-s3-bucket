@@ -3,8 +3,10 @@ repos:
     rev: v0.1.17 # Get the latest from: https://github.com/gruntwork-io/pre-commit/releases
     hooks:
       - id: terraform-fmt
-      - id: terraform-validate
+      # - id: terraform-validate
       - id: tflint
       - id: shellcheck
-    #   - id: gofmt
-    #   - id: golint
+  # - repo: https://github.com/antonbabenko/pre-commit-terraform
+  #   rev: v1.74.1
+  #   hooks:
+      # - id: terraform_checkov

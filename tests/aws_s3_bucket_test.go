@@ -13,6 +13,7 @@ func TestTerraformS3Bucket(t *testing.T) {
 
 	bucket_name := "matt-bytejunkie"
 	force_destroy := "true"
+	additional_tags := map[string]string{"resource_type": "s3_bucket"}
 
 	terraformOptions := terraform.WithDefaultRetryableErrors(t, &terraform.Options{
 		// The path to where our Terraform code is located
@@ -20,8 +21,9 @@ func TestTerraformS3Bucket(t *testing.T) {
 
 		// Variables to pass to our Terraform code using -var options
 		Vars: map[string]interface{}{
-			"bucket_name":   bucket_name,
-			"force_destroy": force_destroy,
+			"bucket_name":     bucket_name,
+			"force_destroy":   force_destroy,
+			"additional_tags": additional_tags,
 		},
 
 		// Variables to pass to our Terraform code using -var-file options
